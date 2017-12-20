@@ -1,0 +1,72 @@
+* {
+    font-family: 'Bungee Inline', cursive;
+    text-align: center;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(https://i.imgur.com/vOgRaX4.jpg);
+}
+
+h1 {
+    text-align: center;
+    color: black;
+}
+
+table {
+    margin: 0 auto; 
+    background-size: contain;
+    font-size: 40px;
+    cursor: default;
+    border-collapse: collapse;   
+    
+}
+
+td {
+    margin: 5px;
+    padding: 13px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%; 
+    padding: 7px;
+    box-sizing: border-box;
+    box-shadow: inset 7px 7px 20px 0px rgba(50, 50, 50, 0.9);
+    
+}
+
+td:hover {
+    opacity: 0.6;
+}
+
+button {
+    margin: 20px auto;
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: black;
+    background: white center;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    transition: background 0.5s;
+
+}
+
+button:hover { 
+    color: purple;
+}
+
+.player1 {
+    float: left;
+    color: red;
+    background-color: pink;
+    padding: 10px;
+}
+
+.player2 {
+    float: right;
+    color: pink;
+    background-color: black;
+    padding: 10px;
+}
