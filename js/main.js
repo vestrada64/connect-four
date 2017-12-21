@@ -1,17 +1,13 @@
-/*------- constants --------*/
 var players = {
     '1': 'red',
     '-1': 'pink',
     'null': 'white'
 };
 
-/*---------app's state (variables) -------*/
 var board, turn, win, msgEl;
-/*---------- cached element references ------ */
-var msgEl = document.getElementById('message');
-/*---------- event listeners --------*/
 
-/* Update the correct element in my board array */ 
+var msgEl = document.getElementById('message');
+
 document.querySelector('table').addEventListener('click', function (evt) {
     var colIdx = parseInt(evt.target.getAttribute('data-col'));
     var column = board[colIdx];
@@ -21,19 +17,10 @@ document.querySelector('table').addEventListener('click', function (evt) {
     render();
 });
 
-// Reset button
 document.querySelector("button").addEventListener('click', function(evt) {
     initialize();
     render();
 });
-
-// Update the correct element in board 
-
-// Claim winner 
-
-//render();
-
-/*--------- functions ------*/
 
 function initialize() {
     board = [
@@ -49,8 +36,6 @@ function initialize() {
     win = null;
 }
 
-// Render gets the cells to show up the player selecting which cell they choose.
-// Player 1 (red) will always go first once the game starts up
 function render () {
 board.forEach(function(colArr, idx) {
     var cells = document.querySelectorAll(`[data-col="${idx}"]`)
@@ -66,12 +51,6 @@ board.forEach(function(colArr, idx) {
 
 })};
 
-
-/*--------- winner combinations -------*/ 
-/* Needed combinations for board array to show winner.
-- 4 horizontal
-- 4 vertical
-- 4 diag */ 
 function getWinner() {
     var winner = null;
     for (var col = 0; col < board.length; col++) {
@@ -118,8 +97,6 @@ function checkDiag(colIdx, offset) {
     }
     return null;
 }
-
-// Init. 
 
 initialize();
 render();
