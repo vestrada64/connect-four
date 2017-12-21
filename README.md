@@ -10,5 +10,9 @@ What was used to create this game had to do with several technologies, we'll sta
 ## Feel free to play! 
 [Connect Four Game](https://vestrada64.github.io/connect-four/)
 
-
+## Features in the game
+* Player 1 (red) will always go first.
+* Will alternate who's turn it is and display on screen.
+* Reset button will clear the board and start up a whole new game.  
+* Prompts the name of the player who was won the game.
 
