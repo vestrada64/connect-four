@@ -16,3 +16,8 @@ What was used to create this game had to do with several technologies, we'll sta
 * Reset button will clear the board and start up a whole new game.  
 * Prompts the name of the player who was won the game.
 
+### Next Steps 
+* Future plans would include having the animation of dropping a disc through each passing row.
+* A sound everytime you place your disc on the board. 
+* Hovering affect over each row. 
+
