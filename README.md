@@ -22,4 +22,5 @@ For anyone who is a fan of **strategy** games, Connect four is definitely your k
 * Future plans would include having the animation of dropping a disc through each passing row.
 * A sound everytime you place your disc on the board. 
 * Hovering affect over each row. 
+* Once winner is chosen, it would force you to start up a new game and not allow you to add more discs to the board. 
 
